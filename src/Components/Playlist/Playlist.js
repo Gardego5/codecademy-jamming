@@ -7,10 +7,10 @@ import TrackList from '../TrackList/TrackList';
 export default class Playlist extends React.Component {
   render() {
     return (
-    <div classList="Playlist">
+    <div className="Playlist">
       <input value="New Playlist"/>
       <TrackList />
-      <button classList="Playlist-save">SAVE TO SPOTIFY</button>
+      <button className="Playlist-save">SAVE TO SPOTIFY</button>
     </div>
     );
   }
