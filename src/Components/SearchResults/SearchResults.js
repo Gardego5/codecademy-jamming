@@ -9,7 +9,7 @@ export default class SearchResults extends React.Component {
     return (
       <div className="SearchResults">
       <h2>Results</h2>
-      <TrackList results={ this.props.results } />
+      <TrackList tracks={ this.props.results } />
     </div>
     );
   }

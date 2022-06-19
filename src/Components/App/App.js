@@ -27,6 +27,19 @@ export default class App extends React.Component {
           artist: 'Rodrigo y Gabriela',
           album: 'Rodrigo y Gabriela'
         }
+      ],
+      playlistName: 'Medley',
+      playlistTracks: [
+        {
+          name: 'Here I Go Again',
+          artist: 'Whitesnake',
+          album: 'Saints & Sinners'
+        },
+        {
+          name: 'Für Elise',
+          artist: 'Richard Clayderman',
+          album: 'Träumereien: Die Schönsten Klavier-Melodien Mit Richard Clayderman'
+        }
       ]
     };
   }
@@ -39,7 +52,7 @@ export default class App extends React.Component {
           <SearchBar />
           <div className="App-playlist">
             <SearchResults results={ this.state.results } />
-            <Playlist />
+            <Playlist name={ this.state.playlistName } tracks={ this.state.playlistTracks } />
           </div>
         </div>
       </div>

@@ -12,7 +12,8 @@ export default class Track extends React.Component {
   }
 
   render() {
-    const track = this.props.track
+    const track = this.props.track;
+
     return (
       <div className="Track">
         <div className="Track-information">
